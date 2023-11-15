@@ -71,6 +71,10 @@ img {
   margin: 0 auto;
 }
 
+.logo {
+  display: flex;
+}
+
 .button {
   display: flex;
   border-radius: 6px;

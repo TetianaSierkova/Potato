@@ -2,13 +2,10 @@
     display: flex;
     border-radius: 6px;
     border: 1px solid transparent;
-    padding: 11px 40px;
     margin-left: auto;
     margin-right: auto;
     font-family: inherit;
     text-align: center;
-    color: var(--accent-color);
-    background-color: transparent;
     @include font(700, 16px, 1.87, 0.06em);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.22);
     cursor: pointer;
@@ -17,8 +14,8 @@
     &:hover,
     &:focus {
         background-image: linear-gradient(to bottom,
-                var(--primary-bgc-color),
-                var(--accent-color));
-                box-shadow: none;
-    }
+            var(--primary-bgc-color),
+            var(--accent-color));
+            box-shadow: none;
+}
 }

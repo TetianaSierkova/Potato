@@ -1,10 +1,13 @@
 .header {
-    height: 114px;
+    //height: 114px;
     background-color: var(--primary-bgc-color);
 }
 
 .header-container {
+    height: 114px;
     display: flex;
+    @extend %align-items;
+    border-bottom: 1px solid #ffffff;
 }
 
 .navigation {
@@ -12,15 +15,18 @@
 }
 
 .logo-icon {
-
+    width: 56px;
+    height: 56px;
 }
 
 .logo-text {
-
+    align-items: center;
+    @include font(400, 35px, 1.37, 0.06em);
+    color: var(--secondary-text-color);
 }
 
 .site-nav {
-
+    display: flex;
 }
 
 .site-nav-item {
@@ -28,25 +34,25 @@
 }
 
 .header-link {
-
+    
 }
 
 .header-buttons {
     display: flex;
 }
 
-.search-button {
-
+.search-button, .bag-button {
+    width: 56px;
+    height: 56px;
+    background-color: var(--secondary-text-color);
+    padding: 10px;
 }
 
-.search-icon {
-
+.search-icon,.bag-icon {
+    width: 24px;
+    height: 24px;
 }
 
 .bag-button {
-
-}
-
-.bag-icon {
-
+    margin-left: 15px;
 }

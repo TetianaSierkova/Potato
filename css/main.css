@@ -104,6 +104,63 @@ img {
   margin-left: 15px;
 }
 
+.hero-button {
+  width: 203px;
+  height: 55px;
+  margin-top: 200px;
+  padding: 14px 28px 14px 28px;
+}
+
+.hero-button,
+.hero-button2 {
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  border: 2px solid var(--secondary-text-color);
+}
+
+.hero-button:hover, .hero-button:focus,
+.hero-button2:hover,
+.hero-button2:focus {
+  background-color: var(--secondary-text-color);
+  color: var(--effect-color);
+}
+
+.hero-button-icon {
+  width: 16px;
+  height: 12px;
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.hero-button-icon:hover, .hero-button-icon:focus {
+  fill: var(--effect-color);
+}
+
+.hero-button2 {
+  width: 168px;
+  height: 80px;
+  margin-top: 200px;
+  margin-left: 130px;
+}
+
+.hero-button-icon2 {
+  width: 40px;
+  height: 20px;
+  margin-left: 12px;
+  border-radius: 12px;
+  fill: currentColor;
+}
+
+.hero-button-icon2:hover, .hero-button-icon2:focus {
+  fill: var(--effect-color);
+  border-color: var(--effect-color);
+}
+
 .container {
   width: 1440px;
   padding-left: 120px;
@@ -229,6 +286,8 @@ input {
 }
 
 .hero-text {
+  width: 112px;
+  height: 27px;
   margin-top: 12px;
   margin-left: 10px;
   font-weight: 500;
@@ -236,60 +295,6 @@ input {
   line-height: 1.35;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-}
-
-.hero-button {
-  width: 203px;
-  height: 55px;
-  margin-top: 200px;
-  padding: 14px 28px 14px 28px;
-}
-
-.hero-button, .hero-button2 {
-  border-radius: 10px;
-  background-color: var(--accent-color);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.35;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-  border: 2px solid var(--secondary-text-color);
-}
-
-.hero-button:hover, .hero-button:focus, .hero-button2:hover, .hero-button2:focus {
-  background-color: var(--secondary-text-color);
-  color: var(--effect-color);
-}
-
-.hero-button-icon {
-  width: 16px;
-  height: 12px;
-  margin-left: 10px;
-  fill: currentColor;
-}
-
-.hero-button-icon:hover, .hero-button-icon:focus {
-  fill: var(--effect-color);
-}
-
-.hero-button2 {
-  width: 168px;
-  height: 80px;
-  margin-top: 200px;
-  margin-left: 130px;
-}
-
-.hero-button-icon2 {
-  width: 40px;
-  height: 20px;
-  margin-left: 12px;
-  border-radius: 12px;
-  fill: currentColor;
-}
-
-.hero-button-icon2:hover, .hero-button-icon2:focus {
-  fill: var(--effect-color);
-  border-color: var(--effect-color);
 }
 
 .hero-list {
@@ -300,7 +305,7 @@ input {
 
 .hero-list-item {
   margin-top: 25px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.35;
   letter-spacing: 0.02em;

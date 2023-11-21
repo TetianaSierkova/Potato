@@ -13,6 +13,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .header-buttons {
     display: flex;
     @extend %align-items;
@@ -43,4 +45,61 @@
 
 .bag-button {
     margin-left: 15px;
+}
+
+
+
+.hero-button {
+    width: 203px;
+    height: 55px;
+    margin-top: 200px;
+    padding: 14px 28px 14px 28px;
+}
+
+.hero-button,
+.hero-button2 {
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    @include font(600, 20px, 1.35);
+    color: var(--secondary-text-color);
+    border: 2px solid var(--secondary-text-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondary-text-color);
+        color: var(--effect-color);
+    }
+}
+
+.hero-button-icon {
+    width: 16px;
+    height: 12px;
+    margin-left: 10px;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        fill: var(--effect-color);
+    }
+}
+
+.hero-button2 {
+    width: 168px;
+    height: 80px;
+    margin-top: 200px;
+    margin-left: 130px;
+}
+
+.hero-button-icon2 {
+    width: 40px;
+    height: 20px;
+    margin-left: 12px;
+    border-radius: 12px;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        fill: var(--effect-color);
+        border-color: var(--effect-color);
+    }
 }

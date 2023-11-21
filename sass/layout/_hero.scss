@@ -1,5 +1,9 @@
 .hero {
     height: 1000px;
+    background-image: url(/images/line.png);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
     background-image: linear-gradient(to bottom,
         var(--accent-color),
         var(--secondary-text-color));
@@ -43,6 +47,8 @@
 
 .hero-list {
     margin-top: 500px;
+    margin-right: 200px;
+    margin-left: -100px;
     display: flex;
     flex-direction: column;
 }

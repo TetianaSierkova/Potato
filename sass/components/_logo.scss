@@ -2,3 +2,17 @@
     width: 56px;
     height: 56px;
 }
+
+.logo-link {
+    @extend %align-items;
+}
+
+.logo-icon {
+    margin-top: 10px;
+}
+
+.logo-text {
+    margin-top: 17px;
+    @include font(400, 35px, 1.37, 0.06em);
+    color: var(--secondary-text-color);
+}

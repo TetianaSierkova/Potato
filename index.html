@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+
     
     <!-- Шапка сторінки -->
 
@@ -50,27 +51,33 @@
     </header>
     
     <main>
+
     
     <!--Секція №1 -->
     
     <section class="container hero">
         <h1 class="title hero-title">Testy Chips</h1>
         <div class="hero-box">
-            <img src="./images/people.png" alt="people">
-            <p class="text hero-text">5K+ Review</p>
+            <div class="hero-box-reviews">
+                <div class="hero-reviews">
+                    <img src="./images/people.png" class="image-people" alt="people">
+                    <p class="text hero-text">5K+ Review</p>
+                </div>
+                
+                
+                <button class="button hero-button">See all item
+                    <svg class="hero-button-icon">
+                        <use href="./images/sprite.svg#icon-vector1"></use>
+                    </svg>
+                </button>
+            </div>
 
-            <button class="button hero-button">See all item
-                <svg class="hero-button-icon">
-                    <use href="./images/sprite.svg#icon-vector1"></use>
-                </svg>
-            </button>
+            <img src="./images/chips1.png" alt="chips">
 
-            <img src="./images/chips1.png" class="hero-image" alt="chips">
-
-            <button class="button hero-button2">
-                <svg class="hero-button-icon">
+            <button class="button hero-button2">Explore
+                <svg class="hero-button-icon2">
                     <use href="./images/sprite.svg#icon-vector2"></use>
-                </svg>Explore
+                </svg>
             </button>
 
             <ul class="list hero-list">
@@ -80,8 +87,9 @@
             </ul>
         </div>
         
-        <img src="./images/lines.png" alt="">
+        <img src="./images/lines.png" class="image-lines" alt="">
     </section>
+
 
     <!-- Секція №2 -->
 

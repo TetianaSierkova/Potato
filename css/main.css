@@ -1,4 +1,4 @@
-.logo-link, .site-nav, .site-nav-item, .header-buttons {
+.button, .header-buttons, .logo-link, .site-nav, .site-nav-item {
   display: flex;
   align-items: center;
 }
@@ -74,6 +74,36 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-buttons {
+  display: flex;
+}
+
+.search-button,
+.bag-button {
+  width: 56px;
+  height: 56px;
+  background-color: var(--secondary-text-color);
+  padding: 16px;
+}
+
+.search-button:hover, .search-button:focus,
+.bag-button:hover,
+.bag-button:focus {
+  background-image: linear-gradient(to bottom, var(--primary-bgc-color), var(--accent-color));
+  box-shadow: none;
+}
+
+.search-icon,
+.bag-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.bag-button {
+  margin-left: 15px;
+}
+
 .container {
   width: 1440px;
   padding-left: 120px;
@@ -90,6 +120,19 @@ input {
 .logo {
   width: 56px;
   height: 56px;
+}
+
+.logo-icon {
+  margin-top: 10px;
+}
+
+.logo-text {
+  margin-top: 17px;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.37;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
 }
 
 .section {
@@ -117,19 +160,6 @@ input {
   display: flex;
 }
 
-.logo-icon {
-  margin-top: 10px;
-}
-
-.logo-text {
-  margin-top: 17px;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 1.37;
-  letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-}
-
 .site-nav {
   margin-left: 280px;
   margin-right: 280px;
@@ -148,6 +178,10 @@ input {
   letter-spacing: 0.02em;
 }
 
+.site-nav .link:active {
+  color: var(--effect-color);
+}
+
 .site-nav-item:not(:last-child) {
   margin-right: 35px;
 }
@@ -160,33 +194,121 @@ input {
   letter-spacing: 0.02em;
 }
 
-.header-buttons {
+.hero {
+  height: 1000px;
+  background-image: linear-gradient(to bottom, var(--accent-color), var(--secondary-text-color));
+}
+
+.hero-title {
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 110px;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  color: var(--secondary-text-color);
+  text-shadow: 2px 2px 20px var(--effect-color), 5px 5px 5px var(--primary-text-color);
+}
+
+.hero-box {
   display: flex;
 }
 
-.search-button, .bag-button {
-  width: 56px;
-  height: 56px;
+.hero-box-reviews {
+  display: block;
+  margin-top: 30px;
+}
+
+.hero-reviews {
+  display: flex;
+}
+
+.image-people {
+  width: 110px;
+  height: 44px;
+}
+
+.hero-text {
+  margin-top: 12px;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.hero-button {
+  width: 203px;
+  height: 55px;
+  margin-top: 200px;
+  padding: 14px 28px 14px 28px;
+}
+
+.hero-button, .hero-button2 {
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  border: 2px solid var(--secondary-text-color);
+}
+
+.hero-button:hover, .hero-button:focus, .hero-button2:hover, .hero-button2:focus {
   background-color: var(--secondary-text-color);
-  padding: 16px;
+  color: var(--effect-color);
 }
 
-.search-button:hover, .search-button:focus, .bag-button:hover, .bag-button:focus {
-  background-image: linear-gradient(to bottom, var(--primary-bgc-color), var(--accent-color));
-  box-shadow: none;
-}
-
-.search-icon, .bag-icon {
-  width: 24px;
-  height: 24px;
+.hero-button-icon {
+  width: 16px;
+  height: 12px;
+  margin-left: 10px;
   fill: currentColor;
 }
 
-.bag-button {
-  margin-left: 15px;
+.hero-button-icon:hover, .hero-button-icon:focus {
+  fill: var(--effect-color);
 }
 
-.hero {
-  background-color: var(--accent-color);
+.hero-button2 {
+  width: 168px;
+  height: 80px;
+  margin-top: 200px;
+  margin-left: 130px;
+}
+
+.hero-button-icon2 {
+  width: 40px;
+  height: 20px;
+  margin-left: 12px;
+  border-radius: 12px;
+  fill: currentColor;
+}
+
+.hero-button-icon2:hover, .hero-button-icon2:focus {
+  fill: var(--effect-color);
+  border-color: var(--effect-color);
+}
+
+.hero-list {
+  margin-top: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-list-item {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.image-lines {
+  margin: 0 auto;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */
